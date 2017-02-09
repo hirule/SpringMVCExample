@@ -36,6 +36,8 @@ public class HomeController {
 		
 		return "home";
 	}
+
+
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String loginPage(Locale locale, Model model) {
@@ -45,6 +47,11 @@ public class HomeController {
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String logoutPage(Locale locale, Model model) {
 		return "logout";
+	}
+
+	@RequestMapping(value = "/logout2", method = RequestMethod.GET)
+	public String logoutPage2(Locale locale, Model model) {
+		return "logout2";
 	}
 	
 	@RequestMapping(value = "/home", method = RequestMethod.POST)
