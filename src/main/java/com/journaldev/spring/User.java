@@ -3,7 +3,6 @@ package com.journaldev.spring;
 public class User {
 
 	private String userName;
-	private String birthday;
 
 	public String getUserName() {
 		return userName;
