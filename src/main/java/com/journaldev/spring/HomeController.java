@@ -49,11 +49,6 @@ public class HomeController {
 		return "logout";
 	}
 
-	@RequestMapping(value = "/logout2", method = RequestMethod.GET)
-	public String logoutPage2(Locale locale, Model model) {
-		return "logout2";
-	}
-	
 	@RequestMapping(value = "/home", method = RequestMethod.POST)
 	public String login(@Validated User user, Model model) {
 		model.addAttribute("userName", user.getUserName());
